@@ -49,7 +49,7 @@ export const getItemOrganization = createAsyncThunk(
   "/getItemOrganizationList",
   async (id) => {
     try {
-      const { data } = await axiosApi.get(`/organization/organization/${id}`);
+      const { data } = await axiosApi.get(`/organization/organization/${id}/`);
       return data;
     } catch (error) {
       handleError(error);
@@ -61,7 +61,7 @@ export const organizationEdit = createAsyncThunk(
   "/editOrganization",
   async ({ id, editData }) => {
     try {
-      await axiosApi.patch(`/organization/organization/${id}`, editData);
+      await axiosApi.patch(`/organization/organization/${id}/`, editData);
     } catch (error) {
       handleError(error);
     }
@@ -135,7 +135,7 @@ export default createReducer(initialState, (builder) => {
     .addCase(organizationEdit.pending, (state) => {
       state.loading = true;
     })
-    .addCase(organizationEdit.fulfilled, (state, { payload }) => {
+    .addCase(organizationEdit.fulfilled, (state) => {
       state.loading = false;
     })
     .addCase(organizationEdit.rejected, (state) => {
