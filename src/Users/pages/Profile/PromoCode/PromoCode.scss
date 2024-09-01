@@ -1,0 +1,65 @@
+.promoCode {
+  padding-top: 20px;
+  &__form {
+    &-col {
+      display: flex;
+      flex-direction: column;
+    }
+    &-fail {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 19.3px;
+      text-align: left;
+      color: #ff0000;
+      margin-bottom: 15px;
+    }
+    &-passed {
+      color: #1dcf00;
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      line-height: 19.3px;
+    }
+    &-input {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      width: 585px;
+      outline: none;
+      box-sizing: border-box;
+      border: 1px solid rgb(175, 37, 28);
+      border-radius: 10px;
+      padding: 13px 25px;
+      margin-bottom: 30px;
+    }
+    &-btns {
+      width: 585px;
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+      button {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 24.12px;
+        color: #fff;
+        width: calc(50% - 12px);
+        border-radius: 10px;
+        border: none;
+        padding: 17px 29px;
+      }
+    }
+    &-cancel {
+      background: #9b2821;
+    }
+    &-ok {
+      background: rgb(227, 94, 85);
+    }
+  }
+  .data__application {
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+.orders {
+  .notice__content-head div div {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__btn {
+    font-family: PP Neue Machina;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    // text-align: left;
+    border-radius: 10px;
+    background: rgb(217, 217, 217);
+    padding: 13px 157px 13px 157px;
+    border: none;
+  }
+  .notice__content-text {
+    max-width: 91%;
+  }
+  .notice__content-body {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .data__application {
+    width: 100%;
+  }
+}

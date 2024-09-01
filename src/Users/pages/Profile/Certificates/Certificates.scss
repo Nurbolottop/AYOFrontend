@@ -1,0 +1,73 @@
+.certificates {
+  &__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 585px;
+    margin-bottom: 50px;
+    button {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+      border-radius: 10px;
+      width: calc(50% - 10px);
+      border: none;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+    &-first {
+      background: #9b2821;
+    }
+    &-last {
+      background: #e25e55;
+    }
+  }
+  &__content {
+    padding: 22px;
+    box-sizing: border-box;
+    border: 0.5px solid rgb(175, 37, 28);
+    border-radius: 20px;
+    background: rgb(248, 248, 248);
+    margin-bottom: 20px;
+    max-width: max-content;
+    &-title {
+      font-family: Kanit Cyrillic;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16.66px;
+      text-align: left;
+    }
+    &-subtitle {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 15.44px;
+      text-align: left;
+    }
+    &-bold {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 15.44px;
+      text-align: left;
+    }
+    &-head {
+      max-width: 90%;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+    &-body &-subtitle,
+    &-body &-title {
+      display: none;
+    }
+  }
+}

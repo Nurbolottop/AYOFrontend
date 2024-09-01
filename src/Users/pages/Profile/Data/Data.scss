@@ -1,0 +1,179 @@
+.data {
+  padding-top: 20px;
+  &__title {
+    font-family: Kanit Cyrillic;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31.23px;
+    margin-bottom: 27px;
+  }
+  &__delete {
+    display: none;
+  }
+  &__column {
+    display: flex;
+    column-gap: 30px;
+    // justify-content: space-between;
+  }
+  &__first {
+    width: 60%;
+    &-about {
+      font-family: "PP Neue Machina";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+      border-radius: 10px;
+      padding: 15px 20px;
+      background: rgb(255, 225, 223);
+      display: inline-block;
+      margin-bottom: 27px;
+    }
+    &-input {
+      border: none;
+      outline: none;
+      font-family: "PP Neue Machina";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 15.44px;
+      text-align: left;
+      // width: min-content;
+      width: 100%;
+    }
+    &-col {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 25px;
+    }
+    &-name {
+      width: calc(50% - 20px);
+      padding-bottom: 11px;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      border-bottom: 1px solid black;
+      justify-content: space-between;
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      p {
+        font-family: "PP Neue Machina";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15.44px;
+        text-align: left;
+      }
+      span {
+        cursor: pointer;
+      }
+    }
+    &-select {
+      width: calc(50% - 20px);
+      display: flex;
+      align-items: end;
+      column-gap: 25px;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15.44px;
+        text-align: left;
+      }
+    }
+  }
+  &__second {
+    // width: 100%;
+    &-name {
+      margin-top: 13px;
+      // width: calc(50% - 20px);
+      padding-bottom: 11px;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      border-bottom: 1px solid black;
+      p {
+        font-family: "PP Neue Machina";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15.44px;
+        text-align: left;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    &-name:last-child {
+      margin-top: 20px;
+    }
+  }
+  &__preference {
+    margin-top: 70px;
+    font-family: "PP Neue Machina";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.37px;
+    border-radius: 10px;
+    background: #ffe1df;
+    border: none;
+    padding: 11px 69px;
+  }
+  &__select {
+    margin-top: 35px;
+    border-radius: 10px;
+    background: #fed0d0;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    width: 531px;
+    font-family: PP Neue Machina;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17.37px;
+    text-align: left;
+    option {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+    }
+  }
+  &__save {
+    margin-top: 90px;
+    display: block;
+    font-family: "PP Neue Machina";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24.12px;
+    border-radius: 10px;
+    background: rgb(155, 40, 33);
+    color: #fff;
+    border: none;
+    padding: 17px 29px;
+    text-align: center;
+    width: 85.5%;
+  }
+  &__application {
+    margin-top: 60px;
+    box-sizing: border-box;
+    border: 3px solid rgb(175, 37, 28);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    width: 85.5%;
+    padding: 35px;
+    padding-bottom: 41px !important;
+    &-text {
+      font-family: "PP Neue Machina";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21.23px;
+      text-align: left;
+    }
+    .data__save {
+      margin-top: 40px;
+    }
+  }
+}

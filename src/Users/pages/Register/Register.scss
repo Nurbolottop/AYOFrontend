@@ -1,0 +1,22 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__form {
+    width: 706px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    .login__form-label {
+      margin-top: 10px;
+    }
+    div {
+      display: flex;
+      column-gap: 20px;
+      .login__form-input {
+        width: calc(50% - 5px);
+      }
+    }
+  }
+}

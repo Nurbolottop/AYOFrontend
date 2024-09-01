@@ -1,0 +1,346 @@
+.history {
+  padding-top: 20px;
+  .backdrop {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  &__modal {
+    // position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display: flex;
+    column-gap: 20px;
+    &-content {
+      width: 344px;
+      // height: 305px;
+      border-radius: 10px;
+      border: 2px solid #af251c;
+      padding: 24px;
+
+      background-color: #fff;
+    }
+    // &-calendar {
+    //   padding: 24px;
+    //   // position: fixed;
+    // }
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-rotate {
+      transform: rotate(180deg);
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 23.16px;
+      text-align: left;
+    }
+    &-close {
+      background: transparent;
+      border: none;
+      img {
+        width: 24px;
+      }
+    }
+    &-labels {
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13.51px;
+        text-align: left;
+      }
+    }
+    &-box {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        font-family: PP Neue Machina;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15.44px;
+        text-align: left;
+      }
+      input {
+        margin-top: 10px;
+        width: 136px;
+        border-radius: 5px;
+        border: none;
+        padding: 12px 0 12px 11px;
+        background: #ececec;
+        outline: none;
+      }
+    }
+    &-range {
+      width: 100%;
+    }
+    &-range[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      background: #000;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity 0.15s ease-in-out;
+    }
+
+    &-range[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background: #000;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    &-range[type="range"]::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      background: #000;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    &-byDate {
+      margin-top: 28px;
+      font-family: PP Neue Machina;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 23.16px;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    &-choose {
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+      text-align: left;
+      padding: 11.5px 21px;
+      border: none;
+      border-radius: 5px x;
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    button {
+      background: #9b2821;
+      // padding: 17px 29px 17px 29px;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+    }
+    &-first {
+      padding: 20.5px 52.5px;
+    }
+    &-last {
+      padding: 10px 32.5px;
+    }
+  }
+  &__mb {
+    margin-bottom: 50px;
+  }
+  &__empty {
+    width: 183px;
+  }
+  &__content {
+    max-width: 828px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #ececec;
+    padding: 21px 20px;
+    &-row {
+      display: none;
+    }
+    &-col {
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+    }
+    &-img {
+      width: 55px;
+    }
+    &-title {
+      justify-self: end;
+      font-family: PP Neue Machina;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 24.12px;
+      text-align: left;
+    }
+    &-cash {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15.44px;
+        text-align: left;
+      }
+    }
+    &-point {
+      font-family: PP Neue Machina;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 24.12px;
+      text-align: left;
+    }
+  }
+  .message__chat-date {
+    margin-top: 20px !important;
+    margin: 0;
+  }
+  .react-calendar {
+    border-radius: 10px;
+    border: 2px solid #af251c;
+    padding: 19px;
+    width: 580px !important;
+  }
+}
+/* Calendar.css */
+.react-calendar {
+  width: 350px;
+  background-color: white;
+  border: none;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  * {
+    font-family: PP Neue Machina;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.3px;
+    text-align: center;
+  }
+  abbr[title] {
+    text-decoration: none;
+    font-family: PP Neue Machina;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.3px;
+    text-align: center;
+    color: #000;
+  }
+}
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+  font-family: Kanit Cyrillic;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 31.23px;
+  text-align: left;
+}
+.react-calendar__tile--active:enabled:hover abbr,
+.react-calendar__tile--active:enabled:focus abbr {
+  background: #e25e55;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background-color: #fff;
+}
+// .react-calendar__tile:enabled:hover,
+// .react-calendar__tile:enabled:focus {
+//   background-color: #fff;
+// }
+.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  display: none;
+}
+// .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend,
+// .react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day,
+// .react-calendar__month-view__weekdays__weekday.react-calendar__month-view__weekdays__weekday--current,
+// .react-calendar__tile.react-calendar__month-view__days__day {
+//   flex: 0 0 8.2857% !important;
+// }
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  color: #888;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  text-align: center;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px !important;
+  background: none;
+  border: none;
+  text-align: center;
+  line-height: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+}
+// .react-calendar__tile abbr {
+//   padding: 10px !important;
+// }
+
+.react-calendar__tile--now abbr {
+  background: #ff5e5e;
+  border-radius: 50%;
+  color: white;
+}
+
+.react-calendar__tile--active abbr {
+  background: #ff5e5e;
+  border-radius: 50%;
+  color: white;
+}
+
+.react-calendar__tile--hasActive abbr {
+  background: #ff5e5e;
+  border-radius: 50%;
+  color: white;
+}
+
+.react-calendar__tile--weekend {
+  color: red;
+}

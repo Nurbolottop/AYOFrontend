@@ -1,0 +1,121 @@
+.message {
+  padding-top: 20px;
+  width: 100%;
+  &__chat {
+    &-logo {
+      width: 55px;
+      height: 55px;
+      img {
+        width: 100%;
+      }
+    }
+    &-head {
+      background: #f8f8f8;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 13px;
+      border: 0.3px solid rgb(175, 37, 28);
+      border-radius: 10px;
+      padding: 7px 15px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      text-align: left;
+    }
+    &-date {
+      margin: 10px auto 14px auto;
+      border-radius: 5px;
+      width: max-content;
+      background: #ededed;
+      padding: 10px 17px;
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+      text-align: center;
+    }
+    &-mass {
+      box-sizing: border-box;
+      border: 0.3px solid rgb(175, 37, 28);
+      border-radius: 20px;
+      background: rgb(248, 248, 248);
+      width: 404px;
+      margin-bottom: 20px;
+      padding: 24px;
+      &-text {
+        max-width: 92%;
+        font-family: PP Neue Machina;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+      }
+      &-date {
+        margin-top: 17px;
+        font-family: PP Neue Machina;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13.51px;
+        text-align: left;
+      }
+    }
+    &-mass.chat-right {
+      margin-left: auto;
+    }
+    &-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 17px 24px;
+      border: 0.3px solid rgb(175, 37, 28);
+      border-radius: 10px;
+      background: rgb(248, 248, 248);
+      input {
+        border: none;
+        outline: none;
+        height: 100%;
+        background-color: transparent;
+        font-family: PP Neue Machina;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 17.37px;
+        text-align: left;
+        width: 100%;
+        padding-right: 10px;
+      }
+    }
+    &-horizon {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      span img {
+        cursor: pointer;
+      }
+    }
+  }
+  &__content {
+    border: 0.3px solid #af251c;
+    padding: 7px 15px;
+    display: flex;
+    column-gap: 17px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #f8f8f8;
+
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      text-align: left;
+    }
+    &-logo {
+      width: 55px;
+    }
+  }
+}

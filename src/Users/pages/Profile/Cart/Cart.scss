@@ -1,0 +1,97 @@
+.cart {
+  padding-top: 20px;
+  &__content {
+    background: #f8f8f8;
+    border: 0.42px solid #af251c;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-img {
+      width: 318px;
+      height: 308px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 28.95px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    &-price {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      text-align: left;
+    }
+    &-row {
+      display: flex;
+      column-gap: 20px;
+    }
+    &-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      text-align: left;
+    }
+    &-count {
+      display: flex;
+      padding: 17px 21px;
+      align-items: center;
+      column-gap: 56px;
+      border-radius: 10px;
+      background: #ffffff;
+      height: 60px;
+      button {
+        border: none;
+        background-color: transparent;
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 24.12px;
+        text-align: left;
+      }
+      p {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 24.12px;
+        text-align: left;
+      }
+    }
+    &-total {
+      background: #9b2821;
+      padding: 15px 0;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 32.62px;
+        text-align: center;
+      }
+      p:last-child {
+        font-family: PP Neue Machina;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23.49px;
+        text-align: center;
+      }
+    }
+  }
+}

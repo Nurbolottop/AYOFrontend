@@ -1,0 +1,45 @@
+.footerLight {
+  margin-top: 130px;
+  padding-top: 130px;
+  border-top: 1px solid #000;
+  padding-bottom: 37px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 222px;
+  }
+  &__content {
+    &-item {
+      width: 209px;
+      border: 1px solid #000000;
+      border-radius: 20px;
+      padding: 10px 0 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      img {
+      }
+      p {
+        margin-top: 12px;
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19.3px;
+        text-align: left;
+      }
+    }
+    &-text {
+      margin-top: 42px;
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      text-align: left;
+      // margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

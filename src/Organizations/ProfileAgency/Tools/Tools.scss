@@ -1,0 +1,152 @@
+.tools {
+  &__title {
+    font-family: Kanit Cyrillic;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 31.23px;
+    text-align: left;
+  }
+  &__col {
+    display: flex;
+    gap: 20px;
+    &-block1 {
+      width: 464px;
+      height: 233px;
+      border-radius: 10px;
+      border: 1px solid #af251c;
+      background-color: #f8f8f8;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24.12px;
+      text-align: left;
+      padding: 30px;
+    }
+    &-des {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+      padding: 30px;
+    }
+
+    &-block2 {
+      width: 585px;
+      height: 233px;
+      border-radius: 10px;
+      border: 1px solid #af251c;
+      background-color: #f8f8f8;
+    }
+  }
+  &__column {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #af251c 1px solid;
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+      padding: 20px 0 0 20px;
+      button {
+        background-color: #e35e55;
+        display: inline-block;
+        width: 121px;
+        height: 23px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 30px;
+        color: white;
+        text-align: center;
+        border: none;
+      }
+    }
+  }
+  &__line {
+    margin-top: 20px;
+    height: auto;
+    border-radius: 10px;
+    border: #af251c 1px solid;
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+      padding: 20px 0 0 20px;
+      button {
+        background-color: #e35e55;
+        display: inline-block;
+        width: 121px;
+        height: 23px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 30px;
+        color: white;
+        text-align: center;
+        border: none;
+      }
+    }
+  }
+  &__pie {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #af251c 1px solid;
+
+    h2 {
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+      text-align: left;
+    }
+  }
+}
+
+.modalBlock {
+  position: fixed;
+  width: 240px;
+  height: 155px;
+  top: 450px;
+  left: 930px;
+  border: 1px solid #f06461;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.modalBlock-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modalBlock-content li {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: PP Neue Machina;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23.16px;
+  text-align: left;
+}
+
+.modalBlock-content li:hover {
+  color: #f06461;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}

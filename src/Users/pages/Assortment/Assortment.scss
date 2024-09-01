@@ -1,0 +1,234 @@
+.assortment {
+  &__head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    &-category {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 15.44px;
+      text-align: left;
+    }
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    &-button {
+      background: #9b2821;
+      border-radius: 10px;
+      border: none;
+      padding: 12px 37px;
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &-company {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      border-radius: 10px;
+      padding: 9px 19px;
+      border: 3px solid #9b2821;
+      h4 {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 24.12px;
+        text-align: left;
+      }
+    }
+  }
+  &__background {
+    padding: 15px;
+    height: 570px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+    img {
+      margin-right: 15px;
+    }
+  }
+  &__col {
+    width: 60%;
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 50px;
+      text-align: left;
+    }
+  }
+  &__column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &-button {
+      background: #9b2821;
+      border-radius: 10px;
+      padding: 13px 0;
+      color: white;
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      text-align: center;
+      border: none;
+    }
+  }
+  &__qr {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 5px solid #af251c;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    &-close {
+      width: 35px;
+      height: 35px;
+      border: none;
+      background-color: transparent;
+      margin-left: auto;
+      margin-bottom: 19px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &-img {
+      margin: 0 47px;
+    }
+    &-number {
+      margin-top: 40px;
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      text-align: center;
+    }
+  }
+}
+.cards {
+  padding: 25px;
+  border: 1px solid #af251c;
+  border-radius: 20px;
+  margin-top: 80px;
+  &__card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px 25px 20px 20px;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    &-img {
+      width: 43px;
+      height: 43px;
+      margin-left: auto;
+      display: block;
+    }
+    &-title {
+      margin-top: 35px;
+      font-family: PP Neue Machina;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21.23px;
+      text-align: left;
+    }
+    &-position {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .agency__card-square {
+      margin-top: 15px;
+    }
+    &-btn {
+      margin-top: 15px;
+      width: 101px;
+      height: 55px;
+      border-radius: 10px;
+      background: #9b2821;
+      border: none;
+    }
+  }
+}
+.product {
+  margin-top: 83px;
+  .row {
+    row-gap: 20px;
+  }
+  &__title {
+    font-family: Kanit Cyrillic;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 52.05px;
+    text-align: left;
+  }
+  &__content {
+    border: 1px solid #af251c;
+    border-radius: 20px;
+    padding: 20px;
+    &-img {
+      display: flex;
+      align-items: center;
+      padding: 30px 30px 38px 30px;
+      background: #f4f4f4;
+      border-radius: 20px;
+    }
+    &-image {
+      max-width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+    &-next,
+    &-prev {
+      border: none;
+      background-color: transparent;
+    }
+    // &-next[disabled],
+    // &-prev[disabled] {
+    //   display: none;
+    // }
+    &-row {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 28.95px;
+      text-align: left;
+    }
+    &-price {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 28.95px;
+      text-align: left;
+    }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      text-align: left;
+      margin-bottom: 44px;
+    }
+  }
+}

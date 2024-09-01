@@ -1,0 +1,93 @@
+.company {
+  .row {
+    row-gap: 20px;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    &-title {
+      font-family: Kanit Cyrillic;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 52.05px;
+      text-align: left;
+    }
+    &-buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      button {
+        border: none;
+        background: #9b2821;
+        color: #fff;
+        border-radius: 10px;
+      }
+    }
+    &-first {
+      padding: 9px 37px;
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &-last {
+      padding: 16px 67px;
+    }
+  }
+  &__content {
+    border: 0.5px solid #af251c;
+    border-radius: 20px;
+    padding: 22px;
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+      }
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 17.37px;
+      text-align: left;
+    }
+    &-status {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 15.44px;
+      text-align: left;
+    }
+    &-img {
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+  &__none {
+    width: max-content;
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 187px;
+      height: 204px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

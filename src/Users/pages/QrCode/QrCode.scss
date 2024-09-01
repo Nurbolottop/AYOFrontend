@@ -1,0 +1,34 @@
+.code {
+  padding-bottom: 100px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    &-subtitle {
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &-code {
+      margin-top: 15px;
+      font-family: PP Neue Machina;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.95px;
+      margin-bottom: 30px;
+      // text-align: left;
+    }
+    &-text {
+      font-family: Involve;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26.6px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+}

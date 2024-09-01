@@ -1,0 +1,50 @@
+.notify {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #af251c;
+    padding: 15px 15px 20px 20px;
+    background-color: #fff;
+    row-gap: 20px;
+    border-radius: 10px;
+    &-text {
+      border: none;
+      background-color: transparent;
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      column-gap: 17px;
+    }
+    &-text.button-close {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 31px;
+      span {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &-text.notify-active {
+      color: #af251c;
+    }
+  }
+}

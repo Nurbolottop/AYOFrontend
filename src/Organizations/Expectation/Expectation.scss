@@ -1,0 +1,36 @@
+.expectation {
+  padding-top: 30px;
+  &__title {
+    font-family: Kanit Cyrillic;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 78.08px;
+    text-align: center;
+  }
+  &__wait {
+    margin-top: 20px;
+    font-family: PP Neue Machina;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: 0 auto;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #af251c 94%, #0000) top/10px 10px
+      no-repeat,
+    conic-gradient(#0000 30%, #af251c);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

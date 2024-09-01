@@ -1,0 +1,132 @@
+.agency {
+  &__content {
+    background-image: url("../../../img/agency.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 644px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 42px 0 105px 42px;
+    border-radius: 24px;
+    &-title {
+      font-family: Bicubik;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 54.47px;
+      text-align: left;
+    }
+    &-subtitle {
+      font-family: Bicubik;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 54.47px;
+      text-align: left;
+    }
+  }
+  .col-3 {
+    padding: 0;
+    width: 30%;
+  }
+  .col-4:first-child {
+    display: none;
+  }
+  .col-9 {
+    width: 70%;
+  }
+  &__qr {
+    border-radius: 24px;
+    border: 5px solid #af251c;
+    width: 100%;
+    min-height: 100%;
+    .showQr__content {
+      margin-top: 84px;
+      &-img {
+        width: 270px;
+      }
+      &-number {
+        margin-top: 40px;
+      }
+      &-text {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__card {
+    margin-top: 17px;
+    padding: 24px;
+    // padding-bottom: 60px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    min-height: 100%;
+
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-title {
+      font-family: Kanit Cyrillic;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 29.15px;
+      text-align: left;
+    }
+    &-img {
+      width: 53px;
+    }
+    &-square {
+      margin-top: 42px;
+      padding: 17px 0 17px 30px;
+      border: 1px dashed #af251c;
+      width: 199px;
+      border-radius: 10px;
+    }
+    &-text {
+      margin-top: 43px;
+      font-family: PP Neue Machina;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21.23px;
+      text-align: left;
+    }
+    &-total {
+      margin-top: 20px;
+      font-family: PP Neue Machina;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21.23px;
+      text-align: left;
+    }
+    &-price {
+      font-family: PP Neue Machina;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 21.23px;
+      text-align: left;
+    }
+  }
+}
+.userHome {
+  .Org__section-title {
+    color: #000;
+  }
+  .footer {
+    background-color: #fff;
+    * {
+      color: #000;
+    }
+  }
+  .faq {
+    background-color: #fff;
+    * {
+      color: #000;
+    }
+    &__item {
+      border-bottom: 1px solid #000;
+    }
+    &__ask-button {
+      color: #fff;
+    }
+  }
+}

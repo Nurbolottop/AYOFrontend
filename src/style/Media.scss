@@ -1,0 +1,1175 @@
+@media screen and (max-width: 1450px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+  // .row {
+  //   flex-wrap: nowrap;
+  // }
+  .agency__content {
+    background-position: center;
+  }
+  .cart__content {
+    &-img {
+      width: 270px;
+      height: 270px;
+    }
+    &-title {
+      font-size: 23px;
+    }
+    &-count {
+      column-gap: 35px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .footerLight .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+  }
+  .confirmed__content-img {
+    margin-top: 90px !important;
+    width: 228px;
+    height: 228.08px;
+  }
+  .confirmed__content-link {
+    padding: 28px 108px;
+    font-family: PP Neue Machina;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 33.77px;
+    text-align: center;
+  }
+  .expectation {
+    &__title {
+      font-family: Kanit Cyrillic;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 66.62px;
+      text-align: center;
+    }
+    &__wait {
+      font-family: PP Neue Machina;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+
+  .cart__content {
+    &-img {
+      width: 209.53px;
+      height: 201.25px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 19.3px;
+      text-align: left;
+    }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+      text-align: left;
+    }
+    &-count {
+      column-gap: 40px;
+      padding: 17px 3px;
+      p,
+      button {
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 19.3px;
+        text-align: left;
+      }
+    }
+    &-price {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 19.3px;
+      text-align: left;
+    }
+    &-total {
+      padding: 5.5px 0;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 26.12px;
+        text-align: center;
+      }
+      p:last-child {
+        font-family: PP Neue Machina;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18.81px;
+        text-align: center;
+      }
+    }
+  }
+  .register,
+  .login {
+    &__form {
+      width: 846px;
+      div {
+        width: 100%;
+      }
+      &-submit {
+        padding: 20.5px 82.5px;
+      }
+    }
+  }
+  .data__application-text {
+    font-size: 20px;
+  }
+  .data__save,
+  .data__application,
+  .notice__content {
+    width: 100%;
+  }
+  .notice__content {
+    &-img {
+      width: 248px;
+      height: 209px;
+    }
+  }
+  .orders__btn {
+    width: 100%;
+    padding: 13px 15px;
+  }
+  .orders .notice__content-text {
+    max-width: 100%;
+  }
+  .certificates__content-img {
+    max-width: 100%;
+  }
+  .agency {
+    .row {
+      justify-content: center;
+      row-gap: 30px;
+    }
+    .col-4 {
+      width: 50%;
+    }
+    &__card:last-child {
+      height: 255px;
+    }
+    &__content {
+      padding: 20px !important;
+      height: 570px !important;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .showQr__content {
+    margin-top: 0;
+  }
+  .expectation {
+    &__title {
+      font-family: Kanit Cyrillic;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 66.62px;
+      text-align: center;
+    }
+    &__wait {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .confirmed__content-link {
+    padding: 20px 67px;
+    font-family: PP Neue Machina;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 24.12px;
+    text-align: center;
+  }
+  // .shop__content {
+  //   margin-bottom: 20px;
+  // }
+  // .shop__content-text {
+  //   text-align: left;
+  // }
+  // .shop__title {
+  //   // text-align: left;
+  // }
+
+  // .shop__text {
+  //   text-align: left;
+  // }
+  .header {
+    &__logo {
+      width: 70px;
+    }
+    &__data {
+      padding: 8px 10px;
+      padding-right: 30px;
+      &-name {
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19.3px;
+        text-align: left;
+      }
+    }
+    &__languages {
+      &-text {
+        padding: 0 7px;
+      }
+    }
+    &__qr,
+    &__menu-bell img {
+      width: 27px;
+    }
+  }
+  .home__content {
+    width: 570px;
+  }
+  .city__form-input {
+    padding: 9px 25px;
+  }
+  .register,
+  .login {
+    &__form {
+      width: 576px;
+      &-title {
+        font-family: Kanit Cyrillic;
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 46.85px;
+        text-align: left;
+      }
+    }
+  }
+  .code__content-subtitle {
+    font-size: 28px;
+  }
+  .profile {
+    flex-wrap: wrap;
+    &__first {
+      padding: 24px;
+      padding-bottom: 24px !important;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 70px;
+      &-logo {
+        width: 160px;
+      }
+      &-edit {
+        margin-top: 45px;
+      }
+      &-line {
+        height: 296px;
+        width: 1px;
+      }
+      &-bold {
+        margin-top: 0;
+        text-align: center;
+      }
+      &-text.active {
+        margin-left: 12px;
+      }
+      &-text {
+        transition: all 0.3s;
+      }
+      &-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 245px;
+        column-gap: 57px;
+      }
+      &-delete {
+        margin-top: 0;
+      }
+    }
+    &__second {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .certificates__btns,
+  .city__form-input,
+  .promoCode__form-input,
+  .promoCode__form-btns {
+    width: 100%;
+  }
+  .notice__content-text {
+    max-width: 56%;
+  }
+  .history__btns-first {
+    padding: 20.5px 108px;
+  }
+  .showQr {
+    width: 406px;
+    height: 523px;
+    &__close {
+      img {
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+    }
+    &__content {
+      &-number {
+        font-family: PP Neue Machina;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 24.12px;
+        text-align: left;
+      }
+      &-text {
+        font-family: PP Neue Machina;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 22.19px;
+        text-align: center;
+      }
+    }
+  }
+  .data__first {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .data__column {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .data__second-name,
+  .data__select {
+    width: calc(50% - 20px);
+  }
+  .login__form-title {
+    text-align: center;
+  }
+  .agency {
+    .col-3 {
+      display: none;
+    }
+    .col-9 {
+      padding: 0;
+      width: 100% !important;
+    }
+    .row {
+      justify-content: space-between;
+      .col-4:nth-child(odd) {
+        width: 40%;
+        display: block;
+      }
+      .col-4:nth-child(even) {
+        width: 60%;
+      }
+      .col-4:nth-child(3) {
+        .agency__card-title {
+          font-family: Kanit Cyrillic;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20.82px;
+          text-align: left;
+        }
+        img {
+          width: 31px;
+          height: 32px;
+        }
+        .agency__card-square {
+          margin-top: 15px;
+        }
+        .agency__card-total {
+          margin-top: 30px;
+          font-family: PP Neue Machina;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 17.37px;
+          text-align: left;
+        }
+      }
+    }
+    &__content {
+      height: 433px !important;
+      padding: 40px 20px !important;
+      &-title {
+        font-size: 40px !important;
+        line-height: 49.52px !important;
+        text-align: left;
+      }
+      &-subtitle {
+        font-size: 40px !important;
+        line-height: 49.52px !important;
+      }
+    }
+    &__qr {
+      margin-top: 17px;
+    }
+    .showQr__content {
+      padding-top: 30px;
+      padding-bottom: 35px;
+      margin-top: 0 !important;
+      &-number {
+        margin-top: 20px;
+      }
+      img {
+        width: 177px;
+      }
+    }
+  }
+  .footerLight {
+    .row {
+      row-gap: 30px;
+    }
+    .col-3 {
+      width: 50%;
+    }
+    &__content {
+      &-item {
+        height: 190px;
+        width: 100% !important;
+        padding: 25px 0 21px;
+        img {
+          width: 95px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 30px !important;
+          line-height: 28.95px;
+          text-align: center;
+        }
+      }
+      &-text {
+        font-family: PP Neue Machina;
+        font-size: 29px !important;
+        font-weight: 400;
+        line-height: 28.95px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .container {
+    max-width: 540px;
+  }
+  .expectation {
+    &__title {
+      font-family: Kanit Cyrillic;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66.62px;
+      text-align: center;
+    }
+    &__wait {
+      font-family: PP Neue Machina;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .cart__content {
+    &-item {
+      flex-direction: column;
+    }
+    &-count {
+      margin-top: 20px;
+      justify-content: space-between;
+      padding: 16px 14.5px;
+    }
+    &-img {
+      width: 150px;
+      height: 150px;
+    }
+    &-total {
+      padding: 7.5px 0;
+    }
+  }
+  .home__content {
+    width: 470px;
+    padding: 25px 50px;
+  }
+  .profile {
+    &__first {
+      margin-bottom: 30px;
+      border: none;
+      display: block;
+      position: relative;
+      &-line {
+        margin: 15px auto 0 auto;
+        width: 100%;
+        height: 1px;
+      }
+      &-none {
+        display: none;
+      }
+      &-edit {
+        position: absolute;
+        bottom: 135px;
+        margin-top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // margin-left: 6px;
+        font-size: 16px;
+        text-align: center;
+      }
+      &-name {
+        margin-top: 15px;
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19.3px;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+  .header {
+    &__data,
+    &__menu-bell,
+    span &__qr {
+      display: none;
+    }
+    &__menu {
+      .header__languages {
+        display: none;
+      }
+    }
+    &__menu-burger {
+      display: block;
+      border: none;
+      background-color: transparent;
+    }
+    &__languages {
+      margin-top: 20px;
+    }
+  }
+  .alert {
+    display: none;
+  }
+  .profile__first-menu {
+    margin-top: 15px;
+    flex-direction: row;
+    height: auto;
+  }
+  .burger {
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    width: 228px;
+    height: 502px;
+    right: 77px;
+    border: 1px solid #af221c;
+    border-radius: 20px;
+    background: #fff;
+    &__close {
+      text-align: end;
+      display: block;
+      img {
+        width: 28px;
+      }
+    }
+  }
+  .notice {
+    &__content {
+      &-body {
+        flex-wrap: wrap;
+      }
+      &-img {
+        width: 100%;
+      }
+      &-text {
+        text-align: start;
+        margin: 20px 0 25px;
+      }
+    }
+  }
+  .promoCode__form-input,
+  .promoCode__form-btns {
+    width: 100%;
+  }
+  .history {
+    &__content {
+      &-title {
+        font-size: 19px;
+      }
+      &-cash {
+        p {
+          font-size: 14px;
+        }
+      }
+      &-point {
+        font-size: 20px;
+      }
+    }
+  }
+  .agency {
+    .col-4 {
+      width: 50% !important;
+    }
+    &__card {
+      padding: 17px !important;
+      &-title {
+        font-size: 17px !important;
+        line-height: 20.82px !important;
+      }
+      &-img {
+        width: 31px !important;
+        height: 32px;
+      }
+      &-text {
+        font-size: 16px !important;
+        margin-top: 20px !important;
+      }
+    }
+  }
+  .showQr__content {
+    padding-bottom: 0 !important;
+    img {
+      width: 160px;
+    }
+    &-number {
+      margin-top: 10px !important;
+    }
+  }
+  .footerLight__content-text {
+    font-size: 21px !important;
+  }
+  .footerLight__content-item {
+    height: auto;
+    img {
+      width: 80px;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .confirmed__content-img {
+    width: 153px;
+    height: 153.06px;
+  }
+  .confirmed__content-link {
+    padding: 10px 31px;
+    font-family: PP Neue Machina;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14.47px;
+    text-align: center;
+  }
+  .expectation {
+    &__title {
+      font-family: Kanit Cyrillic;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 26.03px;
+      text-align: center;
+    }
+    &__wait {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+  .cart__content {
+    border-radius: 16px;
+    &-img {
+      width: 100px;
+      height: 100px;
+    }
+    &_title {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 15.44px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+      text-align: left;
+    }
+    &-price {
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+      text-align: left;
+    }
+    &-total {
+      p {
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20.9px;
+        text-align: center;
+      }
+      p:last-child {
+        font-family: PP Neue Machina;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14.63px;
+        text-align: center;
+      }
+    }
+  }
+  .agency {
+    &__content {
+      background-position: right;
+      height: 488px !important;
+      &-title,
+      &-subtitle {
+        font-size: 25px !important;
+        line-height: 30.95px !important;
+      }
+    }
+    &__qr,
+    &__card {
+      margin-top: 0 !important;
+    }
+    .row {
+      margin-top: 20px;
+      column-gap: 10px;
+    }
+    .col-4 {
+      padding: 0;
+      width: calc(50% - 5px) !important;
+    }
+    &__qr {
+      border: 2px solid #af251c !important;
+    }
+    &__card {
+      border-radius: 24px;
+      border: 2px solid #af251c;
+      background-color: #fff !important;
+      height: auto !important;
+      &-row {
+        flex-direction: column;
+      }
+      &-text {
+        display: none;
+      }
+      &-title {
+        font-size: 12px !important;
+        line-height: 12.49px !important;
+      }
+      &-img {
+        margin-top: 20px;
+        width: 45px !important;
+        height: 49px !important;
+      }
+      &-img.none {
+        display: none;
+      }
+      &-total {
+        font-size: 12px !important;
+        line-height: 11.58px !important;
+      }
+      &-square {
+        padding: 10px 12px !important;
+        width: 100% !important;
+      }
+    }
+    .showQr__content {
+      padding: 28px 0 !important;
+      &-number {
+        display: none;
+      }
+      img {
+        width: 85px;
+        height: 85px;
+      }
+    }
+  }
+  .footerLight {
+    padding: 40px;
+    &__logo {
+      width: 100px;
+    }
+    .container {
+      row-gap: 60px;
+    }
+    .row {
+      gap: 10px;
+    }
+    .col-3 {
+      padding: 0;
+      width: calc(50% - 5px);
+    }
+    &__content {
+      &-item {
+        border-radius: 8.12px;
+        padding: 5px 0;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+        p {
+          font-family: PP Neue Machina;
+          font-size: 14px !important;
+          font-weight: 400;
+          line-height: 13.51px;
+          text-align: center;
+        }
+      }
+      &-text {
+        margin-top: 20px !important;
+        font-family: PP Neue Machina;
+        font-size: 12px !important;
+        font-weight: 400;
+        line-height: 13.51px;
+        text-align: center;
+      }
+    }
+  }
+  .home__content {
+    width: 320px;
+    padding: 30px 20px;
+    &-popular {
+      font-size: 18px;
+    }
+    &-item {
+      margin-top: 20px !important;
+      margin: 0;
+      p {
+        font-family: PP Neue Machina;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 19.3px;
+        text-align: left;
+      }
+    }
+  }
+  .city__form-input {
+    padding: 9px 15px;
+    input {
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.78px;
+      text-align: left;
+    }
+    button {
+      img {
+        margin-top: 2px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  .data__title {
+    font-family: Kanit Cyrillic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20.82px;
+    text-align: left;
+  }
+  .promoCode__form-fail,
+  .promoCode__form-passed {
+    font-family: PP Neue Machina;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 13.51px;
+    text-align: left;
+  }
+  .data__first-name {
+    width: 100%;
+  }
+  .data__second-name,
+  .data__select,
+  .data__preference,
+  .data__first-about {
+    width: 100%;
+  }
+  .data__preference {
+    margin-top: 40px;
+  }
+  .data__save {
+    margin-top: 35px;
+    font-family: PP Neue Machina;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14.47px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .data__select {
+    margin-top: 20px;
+    padding: 10px 15px;
+  }
+  .data__delete {
+    margin-top: 35px;
+    font-family: PP Neue Machina;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 18.33px;
+    text-align: left;
+    display: block;
+    color: #ff0000;
+  }
+  .data__application {
+    margin-top: 30px;
+    padding: 20px 33px !important;
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 14.47px;
+      text-align: left;
+    }
+    .data__save {
+      margin-top: 15px !important;
+    }
+  }
+  .orders .notice__content-date {
+    font-family: PP Neue Machina;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 13.51px;
+    text-align: left;
+  }
+  .notice__content {
+    padding: 15px;
+    &-img {
+      height: 130px;
+    }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 13.51px;
+    }
+    &-body {
+      padding: 0 18px 18px 18px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 16.4px;
+      text-align: left;
+    }
+  }
+  .orders__btn {
+    font-family: PP Neue Machina;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14.47px;
+    text-align: center;
+    padding: 7.5px 0;
+    border-radius: 8.09px;
+  }
+  .city__form-input {
+    padding: 13px 12px 13px 18px;
+    font-family: PP Neue Machina;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16.4px;
+    text-align: left;
+    p {
+      font-family: PP Neue Machina;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 16.4px;
+      text-align: left;
+    }
+  }
+  .city .data__save {
+    margin-top: 367px;
+  }
+  .promoCode__form-btns button {
+    font-family: PP Neue Machina;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14.47px;
+    text-align: center;
+    padding: 13px 0;
+  }
+  .promoCode .data__save {
+    margin-top: 163px;
+  }
+  .promoCode__form-input {
+    font-family: PP Neue Machina;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16.4px;
+    text-align: left;
+    padding: 16px;
+    margin-bottom: 25px;
+  }
+  .message__content {
+    &-logo {
+      width: 28px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 16.4px;
+      text-align: left;
+    }
+  }
+
+  .message__chat {
+    // position: relative;
+    &-head {
+      padding: 5px 10px;
+    }
+    &-back img {
+      margin-top: 4%;
+      width: 24px;
+      height: 20px;
+    }
+    &-logo {
+      width: 28px;
+      height: 28px;
+    }
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 16.4px;
+      text-align: left;
+    }
+    &-date {
+      margin: 0px auto 6px auto;
+    }
+    &-mass {
+      width: 262px;
+      padding: 20px 13px 20px 20px;
+      &-text {
+        font-family: PP Neue Machina;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+      }
+    }
+    &-foot {
+      padding: 15px 21px;
+      input {
+        font-family: PP Neue Machina;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 13.51px;
+        text-align: left;
+      }
+    }
+    &-horizon {
+      column-gap: 15px;
+      span img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .chat-right .message__chat-mass-date {
+    text-align: right;
+  }
+  .message .data__application {
+    margin-top: 160px;
+  }
+  .burger {
+    right: 96px;
+  }
+  .certificates__btns button {
+    font-family: PP Neue Machina;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14.47px;
+    text-align: left;
+    text-align: center;
+    padding: 13px 0;
+  }
+  .certificates__content {
+    &-head &-subtitle,
+    &-head &-title {
+      display: none;
+    }
+    &-body &-subtitle,
+    &-body &-title {
+      display: block;
+    }
+    &-body &-title {
+      margin-top: 10px;
+    }
+    &-body &-subtitle {
+      margin-top: 15px;
+    }
+  }
+  .history__btns-first {
+    padding: 13px 27px;
+  }
+  .history__btns-last {
+    padding: 2.5px 50px;
+  }
+  .history__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    &-col {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+      margin-bottom: 15px;
+    }
+    &-img {
+      width: 45px;
+    }
+    &-row {
+      display: block;
+    }
+    &-row,
+    &-row &-point {
+      display: block;
+    }
+    &-row &-cash {
+      display: flex;
+      row-gap: 15px;
+      margin-bottom: 22px;
+    }
+    &-cash p {
+      font-family: PP Neue Machina;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 16.4px;
+      text-align: left;
+    }
+    &-cash,
+    &-point {
+      display: none;
+    }
+  }
+}

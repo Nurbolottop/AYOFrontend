@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "PP Neue Machina";
+  src: url("../fonts/PPNeueMachina-Light.otf");
+}
+@font-face {
+  font-family: "Kanit Cyrillic";
+  src: url("../fonts/KanitCyrillic.otf");
+}
+@font-face {
+  font-family: "Involve";
+  src: url("../fonts/Involve/Involve-Regular.otf");
+}
+
+@font-face {
+  font-family: "PPNeueMachinaLight";
+  src: url("../fonts/PPNeueMachina-Light.otf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPNeueMachinaRegular";
+  src: url("../fonts/PPNeueMachina-Regular.otf") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPNeueMachinaUltrabold";
+  src: url("../fonts/PPNeueMachina-Ultrabold.otf") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bicubik";
+  src: url("../fonts/Bicubik.otf") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "KanitCyrillic";
+  src: url("../fonts/KanitCyrillic.otf") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NT Somic";
+  src: url(../fonts/NTSomic-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1432px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-3 {
+  width: 25%;
+  padding: 0 15px;
+}
+.col-4 {
+  width: 33.3%;
+  padding: 0 15px;
+}
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+.col-9 {
+  width: 75%;
+  padding: 0 15px;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+@import "./Media.scss";
+@import "../components/UserFooter/UserFooter.scss";
