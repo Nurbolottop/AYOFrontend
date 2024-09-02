@@ -5,7 +5,6 @@ import human from "../../img/icons/humanProfile.svg";
 import Client from "./Client/Client";
 import DataAgency from "./DataAgency/DataAgency";
 import Transaction from "./Transaction/Transaction";
-import DataBanner from "./Banner/DataBanner";
 
 import MessageAgency from "./MessageAgency/MessageAgency";
 import Tools from "./Tools/Tools";
@@ -107,9 +106,6 @@ const ProfileAgency = () => {
     case "transaction":
       section = <Transaction />;
       break;
-    case "loadBanner":
-      section = <DataBanner />
-      break;
     case "message":
       section = <MessageAgency />;
       break;
@@ -165,16 +161,6 @@ const ProfileAgency = () => {
                 onClick={() => setTab("transaction")}
               >
                 История транкзации
-              </li>
-              <li
-                className={
-                  tab === "loadBanner"
-                    ? "profile__first-text active"
-                    : "profile__first-text"
-                }
-                onClick={() => setTab("loadBanner")}
-              >
-                Загрузка баннеров
               </li>
               <li
                 className={
