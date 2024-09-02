@@ -55,7 +55,7 @@ const Assortment = () => {
             </button>
             <div className="assortment__back-company">
               <img src={logo} alt="" />
-              <h4>(название компании)</h4>
+              <h4>{company_name}</h4>
             </div>
           </div>
           <p className="assortment__head-category">(Категория компании)</p>

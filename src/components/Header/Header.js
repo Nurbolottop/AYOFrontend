@@ -23,8 +23,11 @@ const Header = () => {
     <header
       className={location.pathname === "/" ? "header header__black" : "header"}
     >
-      <div className="header__container container">
+
+      <Link to="/">
         <img src={logo} alt="Logo" className="header__logo" />
+      </Link>
+      <div className="header__container container">
         <div className="header__menu">
           <Link to={"/"} className="header__menu-link">
             Главная
@@ -46,7 +49,7 @@ const Header = () => {
             </>
           )}
           <button className="header__menu-burger" onClick={toggleMenu}>
-          <img src={burgerMenu} alt="" />
+            <img src={burgerMenu} alt="" />
           </button>
         </div>
       </div>
