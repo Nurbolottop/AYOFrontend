@@ -25,7 +25,7 @@ const RegisterForm = ({ onSubmit, setEmail }) => {
   return (
     <form className="register__form" onSubmit={onFormSubmit}>
       <h2 className="login__form-title">Регистрация</h2>
-      <div>
+      <div className="register__form-column-grid">
         <input
           type="text"
           name="username"

@@ -19,8 +19,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <main className="home">
-        <div className="home__btns">
-          <button
+        {/* <div className="home__btns"> */}
+          {/* <button
             className={
               activeButton === "modal1"
                 ? "home__btns-btn home__btns-filter home-btn-active"
@@ -114,8 +114,8 @@ const Home = () => {
                 <p>Lorem ipsum</p>
               </div>
             </div>
-          </div>
-        </ModalHome>
+          </div> */}
+        {/* </ModalHome> */}
         <Banner />
         <Shop />
         <Organizations />

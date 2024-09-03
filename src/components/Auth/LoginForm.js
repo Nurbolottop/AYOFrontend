@@ -22,13 +22,6 @@ const LoginForm = ({ onSubmit }) => {
       setError(err.detail || "Произошла неожиданная ошибка.");
     }
   };
-  // const onFormRegister = async (e) => {
-  //   e.preventDefault();
-  //   try{
-  //     setError(null);
-  //     await onRegister
-  //   }
-  // }
 
   return (
     <form onSubmit={onFormSubmit} className="login__form">
@@ -41,6 +34,14 @@ const LoginForm = ({ onSubmit }) => {
         name="email"
         onChange={onChange}
       />{" "}
+      <div className="login__form-column-grid">
+        <Link to={"/register"} className="login__form-submit">
+          Создать аккаунт
+        </Link>
+        <Link to={"/request"} className="login__form-submit"> 
+          Войти в свою компанию
+        </Link>
+      </div>
       <button className="login__form-enter">
         Войти с помощью{" "}
         <span>
@@ -62,9 +63,6 @@ const LoginForm = ({ onSubmit }) => {
       <button className="login__form-submit" type="submit">
         Войти
       </button>
-      <Link to={"/register"} className="login__form-submit">
-        Создать аккаунт
-      </Link>
     </form>
   );
 };
