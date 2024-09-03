@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Children } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import changePen from "../../../img/icons/changePenIcon.svg";
 import { eventHandler } from "../../../utils/eventHandlers";
+import useModal from "../../../hooks/useModal";
 
 const initialState = {
   id: "",
@@ -20,6 +21,17 @@ const initialState = {
   business_areas: 1,
 };
 
+const ModalAddress = ({ onClose, isOpen, children }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div>
+      <div className="backdrop" onClick={onClose} />
+      {children}
+    </div>
+  );
+};
+
 const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { 0: state, 1: setState } = useState(organizationData);
@@ -29,6 +41,7 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
     startDay: "Пн",
     endDay: "Сб",
   });
+  const [editFields, setEditFields] = useState({});
   const [tempSchedule, setTempSchedule] = useState({ ...schedule });
   const popoverRef = useRef(null);
 
@@ -36,6 +49,7 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
     setTempSchedule({ ...schedule });
     setIsOpen(!isOpen);
   };
+  const { modals, openModal, closeModal } = useModal();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -64,6 +78,13 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
     setIsOpen(false);
   };
 
+  const toggleEdit = (fieldName) => {
+    setEditFields((prev) => ({
+      ...prev,
+      [fieldName]: !prev[fieldName],
+    }));
+  };
+
   const onChange = eventHandler(setState);
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -76,23 +97,14 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
       <div className="DataAgency__block">
         <div className="DataAgency__contactDetails">
           <p className="DataAgency__contactDetails-title">Контактные данные</p>
-
           <div className="DataAgency__contactDetails-emNum">
-            <input
-              type="email"
-              placeholder="examle35@gmail.com"
-              value={state.email}
-              onChange={onChange}
-              name="email"
-              className="DataAgency__contactDetails-emNum__input"
-            />
             <PhoneInput
               country={"kg"}
               value={phone}
               onChange={(value) => setState({ ...state, phone_number: value })}
               enableAreaCodes={true}
               inputStyle={{
-                width: "237 px",
+                width: "222px",
                 border: "none",
                 borderBottom: "1px solid black",
                 fontFamily: "PP Neue Machina",
@@ -102,28 +114,75 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
                 textAlign: "left",
                 outline: "none",
                 paddingBottom: "10px",
+                borderRadius: "0",
               }}
               buttonStyle={{
                 border: "none",
                 outline: "none",
                 backgroundColor: "white",
                 borderBottom: "1px solid black",
+                borderRadius: "0",
               }}
             />
           </div>
+          <div className="DataAgency__contactDetails-address DataAgency__margin">
+            <p className="DataAgency__contactDetails-text">{state.address}</p>
+            <button
+              className="DataAgency__button"
+              onClick={() => openModal("address")}
+            >
+              <img src={changePen} alt="" />
+            </button>
+          </div>
           <div className="DataAgency__contactDetails-address">
             <input
-              type="text"
-              value={state.address}
-              placeholder="(адрес)"
-              name="address"
+              type="email"
+              placeholder="examle35@gmail.com"
+              value={state.email}
               onChange={onChange}
-              className="DataAgency__contactDetails-address__input"
+              name="email"
+              className="DataAgency__contactDetails-emNum__input"
             />
-            <img src={changePen} alt="" />
+            <button className="DataAgency__button">
+              <img src={changePen} alt="" />
+            </button>
           </div>
         </div>
-
+        <ModalAddress
+          isOpen={modals["address"]}
+          onClose={() => closeModal("address")}
+        >
+          <div className="DataAgency__modal">
+            <h3 className="DataAgency__modal-title">
+              Добавить ссылку местоположения
+            </h3>
+            <input
+              type="text"
+              name="address"
+              onChange={onChange}
+              value={state.address}
+              className="DataAgency__modal-input"
+              placeholder="Напишите адрес"
+            />
+            <input
+              type="text"
+              className="DataAgency__modal-input"
+              placeholder="Вставьте ссылку"
+            />
+            <div onClick={() => closeModal("address")}>
+              <button className="DataAgency__modal-btn firstData" type="button">
+                Отмена
+              </button>
+              <button
+                className="DataAgency__modal-btn secondData"
+                onClick={onFormSubmit}
+                type="submit"
+              >
+                Ок
+              </button>
+            </div>
+          </div>
+        </ModalAddress>
         <div className="DataAgency__companyName">
           <h1 className="DataAgency__companyName-title">Называние компании</h1>
           <div className="DataAgency__companyName-inp">
@@ -135,7 +194,9 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
               name="company_name"
               className="DataAgency__companyName-input"
             />
-            <img src={changePen} alt="" />
+            <button className="DataAgency__button">
+              <img src={changePen} alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -150,7 +211,9 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
             value={state.description}
             className="DataAgency__aboutCompany-input"
           />
-          <img src={changePen} alt="" />
+          <button className="DataAgency__button">
+            <img src={changePen} alt="" />
+          </button>
         </div>
       </div>
       <div className="DataAgency__category">
@@ -309,12 +372,10 @@ const DataAgencyEdit = ({ onSubmit, organizationData = initialState }) => {
                 </div>
               </div>
             )}
-            <img
-              src={changePen}
-              onClick={togglePopover}
-              alt=""
-              style={{ cursor: "pointer" }}
-            />
+
+            <button className="DataAgency__button" onClick={togglePopover}>
+              <img src={changePen} alt="" />
+            </button>
           </div>
           <hr />
         </div>

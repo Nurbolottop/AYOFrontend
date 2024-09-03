@@ -288,6 +288,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  z-index: 2;
 
   &__content {
     background: #fff;
@@ -297,6 +298,12 @@
     width: 633px;
     height: 584px;
     border-radius: 20px;
+    &-close-btn {
+      border: none;
+      margin-left: auto;
+      display: block;
+      background-color: transparent;
+    }
   }
 
   &__title {

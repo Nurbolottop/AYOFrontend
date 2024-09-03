@@ -19,8 +19,7 @@ const Card = ({ item }) => (
       style={{ backgroundImage: `url(${organizationsImg1})` }}
       key={item.id}
     >
-      <div className="carousel__title">{item.lost_name}</div>
-      <div className="carousel__description">{item.name}</div>
+      <div className="carousel__title">{item.company_name}</div>
     </div>
   </Link>
 );

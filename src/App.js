@@ -21,6 +21,7 @@ import Expectation from "./Organizations/Expectation/Expectation";
 import Confirmed from "./Organizations/Confirmed/Confirmed";
 import "./style/style.scss";
 import { setOrganization, useOrganization } from "./store/organization.reducer";
+import OrganizationConfirm from "./Organizations/OrganizationConfirm/OrganizationConfirm";
 const App = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
@@ -86,6 +87,7 @@ const App = () => {
         <Route path="/qr" element={<QrCode />} />
         <Route path="/expectation" element={<Expectation />} />
         <Route path="/confirmed" element={<Confirmed />} />
+        <Route path="/OrConfirm" element={<OrganizationConfirm />} />
       </Routes>
     </BrowserRouter>
   );

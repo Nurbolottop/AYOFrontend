@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import "react-phone-input-2/lib/style.css";
-// import "antd/dist/reset.css";
-import "./DataAgency.scss";
-import DataAgencyEdit from "./DataAgencyEdit";
 import { useDispatch } from "react-redux";
 import {
   getItemOrganization,
-  getOrganization,
   organizationEdit,
   useOrganization,
 } from "../../../store/organization.reducer";
+import "./DataAgency.scss";
+import DataAgencyEdit from "./DataAgencyEdit";
 
 const DataAgency = () => {
   const dispatch = useDispatch();
