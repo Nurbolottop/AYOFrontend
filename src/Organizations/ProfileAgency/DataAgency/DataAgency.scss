@@ -3,6 +3,57 @@ body {
 }
 .DataAgency {
   width: 827.02px;
+  &__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 586px;
+    height: 336px;
+    border-radius: 10px;
+    border: 2px solid #af251c;
+    background: #f8f8f8;
+    padding: 25px;
+    &-title {
+      font-family: PP Neue Machina;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 23.16px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    &-input {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #af251c;
+      padding: 16px 24px;
+      outline: none;
+      margin-bottom: 20px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      margin-top: 42px;
+    }
+    &-btn {
+      width: calc(50% - 5px);
+      padding: 16.5px 0;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-family: PP Neue Machina;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.37px;
+    }
+    &-btn.firstData {
+      background: #9b2821;
+    }
+    &-btn.secondData {
+      background: #e35e55;
+    }
+  }
   &__title {
     font-family: Kanit Cyrillic;
     font-size: 30px;
@@ -12,6 +63,10 @@ body {
   &__block {
     display: flex;
     justify-content: space-between;
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
   }
   &__contactDetails {
     &-title {
@@ -29,12 +84,20 @@ body {
       margin-top: 25px;
       margin-bottom: 25px;
     }
+    &-text {
+      font-family: PP Neue Machina;
+      font-size: 16px;
+      font-weight: 400;
+      // line-height: 15.44px;
+      text-align: left;
+    }
     &-emNum {
       display: flex;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       &__input {
+        width: 100%;
+        word-wrap: break-word;
         border: none;
-        border-bottom: 1px solid black;
         font-family: PP Neue Machina;
         font-size: 16px;
         font-weight: 400;
@@ -42,8 +105,11 @@ body {
         text-align: left;
         outline: none;
         padding-bottom: 10px;
-        margin-right: 20px;
+        // margin-right: 20px;
       }
+    }
+    &-address.DataAgency__margin {
+      margin-bottom: 30px;
     }
     &-address {
       border-bottom: 1px solid black;

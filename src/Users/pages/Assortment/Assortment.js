@@ -127,7 +127,7 @@ const Assortment = () => {
           </div>
         </section>
         <Qr isOpen={modals["qrModal"]} onClose={() => closeModal("qrModal")} />
-        <section className="product">
+        {/* <section className="product">
           <h3 className="product__title">Ассортимент</h3>
           <div className="row">
             <div className="col-6">
@@ -365,7 +365,7 @@ const Assortment = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
