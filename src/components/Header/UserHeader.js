@@ -35,12 +35,10 @@ const UserHeader = ({ tab, setTab, user }) => {
   return (
     <header className="header">
       <div className="header__container container">
-        <Link to={"/"}>
           <img src={logo} alt="" className="header__logo" />
-        </Link>
         <Link to={"/profile"} className="header__data">
           <img src={human} alt="" className="header__data-img" />
-          <h3 className="header__data-name">{user.first_name}{user.last_name}</h3>
+          <h3 className="header__data-name">{user.first_name}</h3>
         </Link>
         <div className="header__menu">
           <div className="header__languages">

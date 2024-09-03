@@ -5,7 +5,7 @@ import bell from "../../img/icons/bell.svg";
 import massageIcon from "../../img/icons/massageIcon.svg";
 import profileIcon from "../../img/icons/profileIcon.svg";
 import { Link, useLocation } from "react-router-dom";
-import burgerMenu from "../../img/icons/burgerMenu.svg"
+import burgerMenu from "../../img/icons/burgerMenu.svg";
 
 const Header = () => {
   const location = useLocation();
@@ -23,11 +23,10 @@ const Header = () => {
     <header
       className={location.pathname === "/" ? "header header__black" : "header"}
     >
-
-      <Link to="/">
-        <img src={logo} alt="Logo" className="header__logo" />
-      </Link>
       <div className="header__container container">
+        <Link to={"/"}>
+          <img src={logo} alt="Logo" className="header__logo" />
+        </Link>
         <div className="header__menu">
           <Link to={"/"} className="header__menu-link">
             Главная
@@ -55,7 +54,10 @@ const Header = () => {
       </div>
       {isMenuOpen && (
         <div className="overlay" onClick={closeMenu}>
-          <div className="header__menu-content open" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="header__menu-content open"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Link to={"/"} className="header__menu-link" onClick={closeMenu}>
               Главная
             </Link>

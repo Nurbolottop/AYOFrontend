@@ -20,14 +20,15 @@ const Footer = () => {
           <button className="footer__promo-button"> <Link to={"/login"}>  Зарегистрировать  </Link></button>
         </div>
 
-        <Link to="/">
-          {/* <div className="footer__links-logo"> */}
-          <img src={logo} alt="Logo" />
-          {/* </div> */}
-        </Link>
         <div className="footer__links">
           <div className="footer__links-a">
             <div className="footer__links-social">
+
+              <div className="footer__links-logo">
+                <Link to="/">
+                  <img src={logo} alt="Logo" />
+                </Link>
+              </div>
               <a href=""> <div className="footer__social-item">
                 <img src={instagramIcon} alt="" />
                 <br />

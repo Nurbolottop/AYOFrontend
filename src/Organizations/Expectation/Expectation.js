@@ -33,7 +33,7 @@ const Expectation = () => {
       <div className="container">
         <h2 className="expectation__title">Идёт подтверждение</h2>
         <p className="expectation__wait">Пожалуйста, проверьте почту...</p>
-        <div className="loader"></div>
+        {/* <div className="loader"></div> */}
       </div>
     </section>
   );
