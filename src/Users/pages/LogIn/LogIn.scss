@@ -13,13 +13,24 @@
     &-column-grid {
       display: flex;
       column-gap: 10px;
-
-      .login__form-sumbit {
-        padding: 29px, 17px !important;
-        width: calc(50%);
-      }
+      width: 100%;
+      // .login__form-sumbit {
+      //   padding: 29px, 17px !important;
+      //   width: calc(50%);
+      // }
     }
-
+    &-btn {
+      width: calc(50% - 5px);
+      background: #9b2821;
+      border-radius: 10px;
+      font-family: PP Neue Machina;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 24.12px;
+      text-align: center;
+      color: white;
+      padding: 22.5px;
+    }
     &-title {
       font-family: "Kanit Cyrillic";
       font-size: 75px;
