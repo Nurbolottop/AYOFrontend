@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../../img/icons/ayoLogo.svg";
 import humanLogo from "../../img/icons/humanLogo.svg";
-// import bell from "../../img/icons/bell.svg";
-// import massageIcon from "../../img/icons/massageIcon.svg";
+import bell from "../../img/icons/bell.svg";
+import massageIcon from "../../img/icons/massageIcon.svg";
 import profileIcon from "../../img/icons/profileIcon.svg";
 import { Link, useLocation } from "react-router-dom";
 import burgerMenu from "../../img/icons/burgerMenu.svg";
@@ -38,10 +38,12 @@ const Header = () => {
           </div>
           {location.pathname !== "/" ? (
             <>
+              <img src={bell} alt="Bell Icon" />
               <img src={humanLogo} alt="Human Logo" />
             </>
           ) : (
             <>
+              <img src={massageIcon} alt="Massage Icon" />
               <img src={profileIcon} alt="Profile Icon" />
             </>
           )}
@@ -66,10 +68,12 @@ const Header = () => {
             </div>
             {location.pathname !== "/" ? (
               <>
+                <img src={bell} alt="Bell Icon" />
                 <img src={humanLogo} alt="Human Logo" />
               </>
             ) : (
               <>
+                <img src={massageIcon} alt="Massage Icon" />
                 <img src={profileIcon} alt="Profile Icon" />
               </>
             )}
