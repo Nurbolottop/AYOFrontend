@@ -37,7 +37,8 @@ const UserEdit = ({ userData = initialState, onSubmit }) => {
   const onFormSubmit = (e) => {
     e.preventDefault();
     onSubmit(userData.id, state);
-    window.location.reload();
+    // window.location.reload();
+    setEditFields({});
   };
   // console.log(typeof state.phone_number);
 

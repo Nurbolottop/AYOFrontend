@@ -6,9 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   &__data {
+    transform: translate(-50%);
     display: flex;
     align-items: center;
     column-gap: 15px;
@@ -18,6 +20,8 @@
     background: rgb(255, 255, 255);
     padding: 9px 10px;
     padding-right: 90px;
+    position: absolute;
+    left: 50%;
 
     &-name {
       color: rgb(0, 0, 0);
@@ -131,8 +135,6 @@
     .header__menu > img {
       display: none;
     }
-    
-    
 
     .header__menu-burger {
       display: block;
@@ -158,10 +160,9 @@
     .header__menu-content.open {
       display: flex;
     }
-    .header__menu-link.open{
+    .header__menu-link.open {
       display: block;
     }
-    
   }
 
   .overlay {

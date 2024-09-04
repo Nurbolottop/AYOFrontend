@@ -42,11 +42,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      {Boolean(user) ? (
-        <UserHeader tab={tab} setTab={setTab} user={user} />
-      ) : (
-        <Header />
-      )}
+      {Boolean(user) ? <UserHeader tab={tab} setTab={setTab} /> : <Header />}
       <Routes>
         <Route path="/" element={Boolean(user) ? <UserHome /> : <Home />} />
         {user && (

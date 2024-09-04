@@ -11,7 +11,12 @@ import Alert from "../Alert/Alert";
 import ShowQr from "../ShowQr/ShowQr";
 import "./Header.scss";
 import Burger from "../Burger/Burger";
-const UserHeader = ({ tab, setTab, user }) => {
+import { getUserData, useAuth } from "../../store/auth.reducer";
+import { useDispatch } from "react-redux";
+import { organizationEdit } from "../../store/organization.reducer";
+const UserHeader = ({ tab, setTab }) => {
+  const { userData, user } = useAuth();
+  const dispatch = useDispatch();
   const location = useLocation();
   const { modals, openModal, closeModal } = useModal();
   const [modalsOpened, setModalsOpened] = useState({
@@ -32,13 +37,23 @@ const UserHeader = ({ tab, setTab, user }) => {
 
     return () => clearTimeout(timer);
   }, [location.pathname, modalsOpened, openModal]);
+  useEffect(() => {
+    if (user && user.id) {
+      dispatch(getUserData(user.id));
+    }
+  }, [dispatch, user]);
+
   return (
     <header className="header">
       <div className="header__container container">
+        <Link to={"/"}>
           <img src={logo} alt="" className="header__logo" />
+        </Link>
         <Link to={"/profile"} className="header__data">
           <img src={human} alt="" className="header__data-img" />
-          <h3 className="header__data-name">{user.first_name}</h3>
+          <h3 className="header__data-name">
+            {userData?.first_name} {userData?.last_name}
+          </h3>
         </Link>
         <div className="header__menu">
           <div className="header__languages">

@@ -28,16 +28,18 @@ const RegisterForm = ({ onSubmit, setEmail }) => {
       <div className="register__form-column-grid">
         <input
           type="text"
-          name="username"
+          name="first_name"
           className="login__form-input"
           placeholder="Имя"
+          required
           onChange={onChange}
         />
         <input
           type="text"
-          name="first_name"
+          name="username"
           className="login__form-input"
           placeholder="Фамилия"
+          required
           onChange={onChange}
         />
       </div>
@@ -45,6 +47,7 @@ const RegisterForm = ({ onSubmit, setEmail }) => {
         type="email"
         name="email"
         className="login__form-input"
+        required
         placeholder="Электронная почта"
         onChange={onChange}
       />
