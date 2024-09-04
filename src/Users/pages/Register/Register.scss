@@ -11,7 +11,7 @@
     .login__form-label {
       margin-top: 10px;
     }
-    div {
+    &-column-grid {
       display: flex;
       column-gap: 20px;
       .login__form-input {
