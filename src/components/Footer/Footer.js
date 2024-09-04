@@ -16,7 +16,6 @@ const Footer = () => {
           СКОРЕЕ ЗАРЕГИСТРИРУЙТЕСЬ, ПОЛУЧИТЬ КЕШБЕК ДО 30% НА ЛЮБИМЫЕ МАГАЗИНЫ И
           ВЕРНУТЬ ЧАСТЬ ДЕНЕГ ОБРАТНО НА СВОЙ СЧЕТ!
         </h2>
-
         <button className="footer__promo-button"> <Link to={"/login"}>  Зарегистрировать  </Link></button>
           </div>
       <div className="footer__links">
