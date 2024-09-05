@@ -38,12 +38,10 @@ const Header = () => {
           </div>
           {location.pathname !== "/" ? (
             <>
-              <img src={bell} alt="Bell Icon" />
               <img src={humanLogo} alt="Human Logo" />
             </>
           ) : (
             <>
-              <img src={massageIcon} alt="Massage Icon" />
               <img src={profileIcon} alt="Profile Icon" />
             </>
           )}

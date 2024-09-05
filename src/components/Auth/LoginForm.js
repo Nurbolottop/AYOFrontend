@@ -35,10 +35,10 @@ const LoginForm = ({ onSubmit }) => {
         onChange={onChange}
       />{" "}
       <div className="login__form-column-grid">
-        <Link to={"/register"} className="login__form-submit">
+        <Link to={"/register"} className="login__form-btn ">
           Создать аккаунт
         </Link>
-        <Link to={"/request"} className="login__form-submit"> 
+        <Link to={"/request"} className="login__form-btn ">
           Войти в свою компанию
         </Link>
       </div>

@@ -6,6 +6,7 @@
 .home {
   &__content {
     left: 50%;
+    z-index: 2;
     top: calc(50% - 50px);
     transform: translate(-50%, -50%);
     position: fixed;
