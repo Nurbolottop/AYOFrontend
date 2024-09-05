@@ -24,7 +24,7 @@ export const organizationRequest = createAsyncThunk(
   async (credentials) => {
     try {
       const { data } = await axiosApi.post(
-        "/organization/organization/",
+        "/organization/organizations/",
         credentials
       );
       return data;
@@ -38,7 +38,7 @@ export const getOrganization = createAsyncThunk(
   "/getOrganizationList",
   async () => {
     try {
-      const { data } = await axiosApi.get(`/organization/organization/`);
+      const { data } = await axiosApi.get(`/organization/organizations/`);
       return data;
     } catch (error) {
       handleError(error);
@@ -49,7 +49,7 @@ export const getItemOrganization = createAsyncThunk(
   "/getItemOrganizationList",
   async (id) => {
     try {
-      const { data } = await axiosApi.get(`/organization/organization/${id}/`);
+      const { data } = await axiosApi.get(`/organization/organizations/${id}/`);
       return data;
     } catch (error) {
       handleError(error);
@@ -61,7 +61,7 @@ export const organizationEdit = createAsyncThunk(
   "/editOrganization",
   async ({ id, editData }) => {
     try {
-      await axiosApi.patch(`/organization/organization/${id}/`, editData);
+      await axiosApi.patch(`/organization/organizations/${id}/`, editData);
     } catch (error) {
       handleError(error);
     }
